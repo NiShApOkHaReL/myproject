@@ -23,7 +23,7 @@ from django.views.generic import RedirectView
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('myapp.urls')),
-    path('', RedirectView.as_view(url='upload/', permanent=True)),
+    # path('', RedirectView.as_view(url='upload/', permanent=True)),
 ]
 
 if settings.DEBUG:
